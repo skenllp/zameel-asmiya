@@ -643,7 +643,7 @@
      8 · Countdown  ·  22 Aug 2026, 10:30 IST
      --------------------------------------------------------- */
   (function countdown() {
-    var target = new Date('2026-08-22T10:30:00+05:30').getTime();
+    var target = new Date('2026-08-22T10:00:00+05:30').getTime();
     var d = document.getElementById('cdD'),
         h = document.getElementById('cdH'),
         m = document.getElementById('cdM'),
