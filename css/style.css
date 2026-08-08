@@ -1031,6 +1031,123 @@ body:not(.is-revealed) #site * {
   }
 }
 
+/* Highly visible scroll indicator */
+.new-scroll-indicator {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  background: rgba(193, 150, 47, 0.15);
+  padding: 15px 20px;
+  border-radius: 25px;
+  border: 2px solid #C1962F;
+  box-shadow: 0 4px 20px rgba(193, 150, 47, 0.3);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.new-scroll-indicator:hover {
+  background: rgba(193, 150, 47, 0.25);
+  transform: translateX(-50%) translateY(-5px);
+  box-shadow: 0 6px 25px rgba(193, 150, 47, 0.4);
+}
+
+.scroll-pulse {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid #C1962F;
+  border-radius: 25px;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.scroll-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.scroll-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: #8E6C1E;
+  text-transform: uppercase;
+  font-family: 'Marcellus', serif;
+}
+
+.scroll-chevron {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.scroll-chevron span {
+  display: block;
+  width: 12px;
+  height: 2px;
+  background: #C1962F;
+  transform: rotate(45deg);
+  animation: chevron 1.5s ease-in-out infinite;
+}
+
+.scroll-chevron span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.scroll-chevron span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.scroll-chevron span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.scroll-chevron span:before {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 2px;
+  background: #C1962F;
+  transform: rotate(-90deg);
+  margin-top: -2px;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes chevron {
+  0%, 100% {
+    opacity: 0.3;
+    transform: rotate(45deg) translateY(0);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(45deg) translateY(3px);
+  }
+}
+
 /* ============================================================
    9 · FLOW SECTION INTERNALS
    ============================================================ */
