@@ -481,8 +481,11 @@
         <div class="venue-wrap">
           <div class="venue-info reveal">
             <h3 data-bind="venue-name">Palm Convention Centre Pulamanthole</h3>
-            <p data-bind="venue-address">Palm Convention Centre Pulamanthole, Malappuram, Kerala, India</p>
-            <div class="venue-actions">
+          <div class="map-frame reveal delay-1">
+            <iframe data-bind="venue-map-embed" src="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Venue location on Google Maps"></iframe>
+          </div>
+                   <div class="venue-actions">
               <a class="btn btn--solid" data-bind="venue-directions" href="https://share.google/T3QdATApO2avjG50E"
                 target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
@@ -499,10 +502,6 @@
                 <span class="btn-text">Copy Address</span>
               </button>
             </div>
-          </div>
-          <div class="map-frame reveal delay-1">
-            <iframe data-bind="venue-map-embed" src="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-              title="Venue location on Google Maps"></iframe>
           </div>
         </div>
       </div>
