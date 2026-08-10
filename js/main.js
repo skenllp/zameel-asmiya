@@ -143,8 +143,7 @@
       window.setTimeout(() => {
         opening.classList.add("opening--fading");
         site.classList.add("site--visible");
-        document.documentElement.classList.remove("scroll-locked");
-        document.body.classList.remove("scroll-locked");
+        document.body.style.overflow = "";
         // Kick off the staggered hero entrance (bismillah/eyebrow → names →
         // date/venue → scroll indicator) right as the site becomes visible.
         const hero = document.getElementById("hero");
@@ -157,8 +156,7 @@
     }, { once: true });
 
     // lock scroll while the opening sequence plays
-    document.documentElement.classList.add("scroll-locked");
-    document.body.classList.add("scroll-locked");
+    document.body.style.overflow = "hidden";
   }
 
   /* ------------------------------------------------------------------ */
