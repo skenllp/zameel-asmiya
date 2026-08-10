@@ -3032,6 +3032,16 @@ body {
   padding: 0;
 }
 
+/* Scroll lock used while the opening splash screen is showing.
+   Needs its own class (rather than relying on an inline style) because
+   the !important rules above would otherwise always win and silently
+   cancel out document.body.style.overflow = "hidden" set from JS. */
+html.scroll-locked,
+body.scroll-locked {
+  overflow-y: hidden !important;
+  height: 100% !important;
+}
+
 /* Force all elements to stay within viewport WIDTH only */
 * {
   max-width: 100% !important;
