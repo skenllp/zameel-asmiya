@@ -3015,86 +3015,135 @@ body {
 
 /* ===================== COMPREHENSIVE MOBILE OPTIMIZATIONS =============== */
 
-/* Remove horizontal scrolling */
-html, body {
-  overflow-x: hidden;
-  max-width: 100vw;
+/* AGGRESSIVE HORIZONTAL SCROLL PREVENTION */
+html {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100% !important;
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
 }
 
-/* Fix any elements that might cause horizontal overflow */
+/* Force all elements to stay within viewport */
 * {
-  max-width: 100%;
-  box-sizing: border-box;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
 }
 
-/* Ensure containers don't overflow */
+/* Prevent any element from going outside viewport */
+*:not(html):not(body) {
+  max-width: 100vw !important;
+}
+
+/* Main containers */
+#site,
+#opening,
+#hero,
+.section {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+  width: 100% !important;
+}
+
+/* Container safety */
 .container {
-  max-width: 100vw;
-  overflow-x: hidden;
-  padding-left: clamp(1rem, 4vw, 2rem);
-  padding-right: clamp(1rem, 4vw, 2rem);
+  max-width: 100vw !important;
+  width: 100% !important;
+  overflow-x: hidden !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
-/* Fix hero section overflow */
-#hero {
-  overflow-x: hidden;
-  max-width: 100vw;
+/* Grid safety */
+.hero__grid,
+.couple-grid,
+.details-grid,
+.venue-wrap {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+  width: 100% !important;
 }
 
-.hero__grid {
-  overflow-x: hidden;
-  max-width: 100%;
+/* Text elements safety */
+.hero__names,
+.opening__names,
+.section-heading,
+h1, h2, h3, h4, h5, h6 {
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
 }
 
-/* Fix decorative elements that might overflow */
-.hero__flower {
-  max-width: 100px;
+/* Decorative elements that might overflow */
+.hero__flower,
+.hero__corner,
+.orb,
+.floating-flowers {
+  max-width: 80px !important;
+  overflow: hidden !important;
 }
 
 .hero__flower.left {
-  left: clamp(10px, 2vw, 20px);
+  left: 10px !important;
 }
 
 .hero__flower.right {
-  right: clamp(10px, 2vw, 20px);
+  right: 10px !important;
 }
 
-/* Fix any wide elements */
-.section {
-  overflow-x: hidden;
-  max-width: 100vw;
+/* Buttons and interactive elements */
+.btn,
+.new-scroll-indicator {
+  max-width: calc(100vw - 2rem) !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
 }
 
-/* Fix couple cards grid on mobile */
-.couple-grid {
-  overflow-x: hidden;
-  max-width: 100%;
+/* Images safety */
+img {
+  max-width: 100% !important;
+  height: auto !important;
+  overflow: hidden !important;
 }
 
-/* Fix venue section */
-.venue-wrap {
-  overflow-x: hidden;
-  max-width: 100%;
+/* Canvas elements */
+canvas {
+  max-width: 100vw !important;
+  overflow: hidden !important;
 }
 
-/* Fix any text that might overflow */
-.hero__names,
-.opening__names {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  max-width: 100%;
+/* Specific problematic elements */
+.section-canvas,
+#particles,
+#floating-flowers {
+  overflow: hidden !important;
+  max-width: 100vw !important;
+  width: 100% !important;
 }
 
-/* Ensure buttons don't cause overflow */
-.btn {
-  max-width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+/* Mobile viewport lock */
+@media (max-width: 768px) {
+  * {
+    max-width: 100vw !important;
+  }
+  
+  body {
+    position: relative !important;
+    overflow-x: hidden !important;
+  }
+  
+  .container {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
 }
 
 /* Mobile viewport optimization */
