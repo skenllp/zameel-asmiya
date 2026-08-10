@@ -38,7 +38,7 @@
     setText("[data-bind='dua-translation']", `"${cfg.invitation.duaTranslation}"`);
 
     // Bride
-    setImg("[data-bind='bride-portrait']", cfg.couple.bride.portrait, `Photograph of ${cfg.couple.bride.fullName}`);
+    setText("[data-bind='bride-initial']", cfg.couple.bride.fullName.charAt(0).toUpperCase());
     setText("[data-bind='bride-name']", cfg.couple.bride.fullName);
     setText("[data-bind='bride-family']", cfg.couple.bride.family);
     setText("[data-bind='bride-father']", cfg.couple.bride.father);
@@ -47,7 +47,7 @@
     setText("[data-bind='bride-parents']", `D/o ${cfg.couple.bride.father} & ${cfg.couple.bride.mother}`);
 
     // Groom
-    setImg("[data-bind='groom-portrait']", cfg.couple.groom.portrait, `Photograph of ${cfg.couple.groom.fullName}`);
+    setText("[data-bind='groom-initial']", cfg.couple.groom.fullName.charAt(0).toUpperCase());
     setText("[data-bind='groom-name']", cfg.couple.groom.fullName);
     setText("[data-bind='groom-family']", cfg.couple.groom.family);
     setText("[data-bind='groom-father']", cfg.couple.groom.father);

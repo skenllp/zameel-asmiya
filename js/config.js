@@ -27,8 +27,7 @@ window.WEDDING_CONFIG = {
       father: "Azeez Cherengathody",
       mother: "Bushara",
       house: "Cherengathody (H)",
-      po: "Punnakkad",
-      portrait: "assets/images/bride-portrait.jpeg"
+      po: "Punnakkad"
     },
     groom: {
       fullName: "Zameel Mohammed",
@@ -36,8 +35,7 @@ window.WEDDING_CONFIG = {
       father: "Azeez",
       mother: "Rasiya",
       house: "Poonthottathil (H)",
-      po: "Valapuram (PO)",
-      portrait: "assets/images/groom-portrait.jpeg"
+      po: "Valapuram (PO)"
     }
   },
 
