@@ -1070,6 +1070,7 @@ textarea:focus-visible {
 .section {
   position: relative;
   padding-block: var(--section-space);
+  overflow-x: hidden;
 }
 
 .section--alt {
