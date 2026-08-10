@@ -12,7 +12,7 @@ window.WEDDING_CONFIG = {
   /* ---------- Meta / SEO ---------- */
   meta: {
     pageTitle: "Zameel Mohammed & Asmiya Sherin C.T | Wedding Invitation",
-    description: "Wedding Invitation of Zameel Mohammed & Asmiya Sherin C.T — 23 August 2026, Pulamanthol.",
+    description: "Wedding Invitation of Zameel Mohammed & Asmiya Sherin C.T — 23 August 2026, Palm Convention Centre Pulamanthol.",
     ogImage: "assets/images/og-image.jpg",
     siteUrl: "" // fill with the live URL once deployed
   },
