@@ -24,7 +24,7 @@
   /* High-contrast Didone used only for the couple's names (& the ampersand
      that sits between them) — "Bodoni 72" first for systems that have it
      installed, falling back to the closest legal web-font match. */
-  --f-bodoni: 'Bodoni 72', 'Bodoni Moda', 'Bodoni MT', serif;
+  --f-bodoni: 'Playfair Display', serif;
   --f-swash: 'Bonheur Royale', cursive;
   --f-body: 'Poppins', sans-serif;
   --f-arabic: 'Amiri', serif;
