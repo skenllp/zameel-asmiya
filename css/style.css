@@ -3015,52 +3015,64 @@ body {
 
 /* ===================== COMPREHENSIVE MOBILE OPTIMIZATIONS =============== */
 
-/* AGGRESSIVE HORIZONTAL SCROLL PREVENTION */
+/* PREVENT HORIZONTAL SCROLL ONLY - PRESERVE VERTICAL SCROLL */
 html {
   overflow-x: hidden !important;
+  overflow-y: auto !important;
   max-width: 100vw !important;
   width: 100% !important;
 }
 
 body {
   overflow-x: hidden !important;
+  overflow-y: auto !important;
   max-width: 100vw !important;
   width: 100% !important;
   margin: 0;
   padding: 0;
 }
 
-/* Force all elements to stay within viewport */
+/* Force all elements to stay within viewport WIDTH only */
 * {
   max-width: 100% !important;
   box-sizing: border-box !important;
 }
 
-/* Prevent any element from going outside viewport */
+/* Prevent any element from going outside viewport WIDTH */
 *:not(html):not(body) {
   max-width: 100vw !important;
 }
 
-/* Main containers */
+/* Main containers - preserve vertical scroll */
 #site,
-#opening,
-#hero,
-.section {
+#opening {
   overflow-x: hidden !important;
+  overflow-y: visible !important;
   max-width: 100vw !important;
   width: 100% !important;
 }
 
-/* Container safety */
+#hero,
+.section {
+  overflow-x: hidden !important;
+  overflow-y: visible !important;
+  max-width: 100vw !important;
+  width: 100% !important;
+}
+
+/* Container safety - preserve height */
 .container {
   max-width: 100vw !important;
   width: 100% !important;
   overflow-x: hidden !important;
   padding-left: 1rem !important;
   padding-right: 1rem !important;
+  /* Remove any height constraints that might break scrolling */
+  height: auto !important;
+  min-height: auto !important;
 }
 
-/* Grid safety */
+/* Grid safety - preserve natural height */
 .hero__grid,
 .couple-grid,
 .details-grid,
@@ -3068,6 +3080,8 @@ body {
   overflow-x: hidden !important;
   max-width: 100% !important;
   width: 100% !important;
+  height: auto !important;
+  min-height: auto !important;
 }
 
 /* Text elements safety */
@@ -3081,13 +3095,17 @@ h1, h2, h3, h4, h5, h6 {
   overflow-x: hidden !important;
 }
 
-/* Decorative elements that might overflow */
+/* Decorative elements that might overflow WIDTH */
 .hero__flower,
 .hero__corner,
-.orb,
-.floating-flowers {
+.orb {
   max-width: 80px !important;
-  overflow: hidden !important;
+  overflow-x: hidden !important;
+}
+
+.floating-flowers {
+  max-width: 100vw !important;
+  overflow-x: hidden !important;
 }
 
 .hero__flower.left {
@@ -3102,7 +3120,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn,
 .new-scroll-indicator {
   max-width: calc(100vw - 2rem) !important;
-  overflow: hidden !important;
+  overflow-x: hidden !important;
   white-space: nowrap !important;
   text-overflow: ellipsis !important;
 }
@@ -3111,25 +3129,36 @@ h1, h2, h3, h4, h5, h6 {
 img {
   max-width: 100% !important;
   height: auto !important;
-  overflow: hidden !important;
+  overflow-x: hidden !important;
 }
 
 /* Canvas elements */
 canvas {
   max-width: 100vw !important;
-  overflow: hidden !important;
+  overflow-x: hidden !important;
 }
 
 /* Specific problematic elements */
 .section-canvas,
 #particles,
 #floating-flowers {
-  overflow: hidden !important;
+  overflow-x: hidden !important;
   max-width: 100vw !important;
   width: 100% !important;
 }
 
-/* Mobile viewport lock */
+/* Fix scroll behavior */
+html {
+  scroll-behavior: smooth !important;
+}
+
+/* Ensure sections have proper spacing for scroll */
+.section {
+  padding-top: var(--section-space, 4rem) !important;
+  padding-bottom: var(--section-space, 4rem) !important;
+}
+
+/* Mobile viewport lock - WIDTH ONLY */
 @media (max-width: 768px) {
   * {
     max-width: 100vw !important;
@@ -3138,11 +3167,18 @@ canvas {
   body {
     position: relative !important;
     overflow-x: hidden !important;
+    overflow-y: auto !important;
   }
   
   .container {
     padding-left: 0.75rem !important;
     padding-right: 0.75rem !important;
+  }
+  
+  /* Ensure mobile scrolling works properly */
+  #site {
+    min-height: 100vh !important;
+    height: auto !important;
   }
 }
 
