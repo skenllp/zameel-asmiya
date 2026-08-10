@@ -21,6 +21,10 @@
   /* ---- Type ---- */
   --f-heading: 'Cormorant Garamond', serif;
   --f-names: 'Cormorant Garamond', serif;
+  /* High-contrast Didone used only for the couple's names (& the ampersand
+     that sits between them) — "Bodoni 72" first for systems that have it
+     installed, falling back to the closest legal web-font match. */
+  --f-bodoni: 'Bodoni 72', 'Bodoni Moda', 'Bodoni MT', serif;
   --f-swash: 'Bonheur Royale', cursive;
   --f-body: 'Poppins', sans-serif;
   --f-arabic: 'Amiri', serif;
@@ -433,8 +437,8 @@ textarea:focus-visible {
 }
 
 .opening__title .opening__names {
-  font-family: var(--f-names);
-  font-style: italic;
+  font-family: var(--f-bodoni);
+  font-style: normal;
   color: var(--ink-heading);
   font-size: clamp(1.35rem, 4.2vw, 2rem);
   font-weight: 500;
@@ -444,7 +448,7 @@ textarea:focus-visible {
 
 .opening__title .opening__names .amp {
   color: var(--gold);
-  font-family: var(--f-heading);
+  font-family: var(--f-bodoni);
   font-style: italic;
   padding-inline: 10px;
   font-size: .85em;
@@ -925,12 +929,13 @@ textarea:focus-visible {
 }
 
 .hero__names {
-  font-family: var(--f-names);
-  font-style: italic;
+  font-family: var(--f-bodoni);
+  font-style: normal;
   color: var(--ink-heading);
   font-size: clamp(2.1rem, 5.2vw, 4rem);
   line-height: 1.08;
   font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 /* First letter of each word in the couple's names, rendered in a flowing
@@ -950,7 +955,7 @@ textarea:focus-visible {
 
 .hero__names .amp {
   display: block;
-  font-family: var(--f-heading);
+  font-family: var(--f-bodoni);
   font-style: italic;
   color: var(--gold) !important;
   /* Gold & symbol */
@@ -1521,7 +1526,7 @@ textarea:focus-visible {
 
 /* ---- Name ---- */
 .couple-card__name {
-  font-family: var(--f-names);
+  font-family: var(--f-bodoni);
   font-size: clamp(1.5rem, 3vw, 2rem);
   font-weight: 600;
   color: var(--ink-heading);
@@ -1634,7 +1639,7 @@ textarea:focus-visible {
 }
 
 .couple-divider .amp {
-  font-family: var(--f-heading);
+  font-family: var(--f-bodoni);
   font-style: italic;
   color: var(--gold);
   font-size: 1.6rem;

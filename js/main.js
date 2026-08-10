@@ -17,14 +17,16 @@
     document.title = cfg.meta.pageTitle;
 
     // Hero
-    setSwashName("[data-bind='hero-bride-name']", cfg.couple.brideFirstName);
-    setSwashName("[data-bind='hero-groom-name']", cfg.couple.groomFirstName);
+    // Bodoni's own capitals are the decorative element here, so the
+    // couple's names render as plain text (no script swash initial).
+    setText("[data-bind='hero-bride-name']", cfg.couple.brideFirstName);
+    setText("[data-bind='hero-groom-name']", cfg.couple.groomFirstName);
     setText("[data-bind='hero-date']", cfg.wedding.dateDisplay);
     setText("[data-bind='hero-venue']", `${cfg.wedding.venueName}, ${cfg.wedding.venueCity}`);
 
     // Opening overlay
-    setSwashName("[data-bind='open-bride-name']", cfg.couple.brideFirstName);
-    setSwashName("[data-bind='open-groom-name']", cfg.couple.groomFirstName);
+    setText("[data-bind='open-bride-name']", cfg.couple.brideFirstName);
+    setText("[data-bind='open-groom-name']", cfg.couple.groomFirstName);
 
     // Bismillah
     setText("[data-bind='bismillah-arabic']", cfg.invitation.bismillahArabic);
