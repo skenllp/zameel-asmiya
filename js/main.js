@@ -87,8 +87,7 @@
     const audio = document.querySelector("#bg-music");
     if (audio) audio.src = cfg.music.src;
 
-    // Hero illustration + optional soft background artwork
-    setImg("[data-bind='hero-illustration']", cfg.illustrations.heroCouple, "Illustration of the bride and groom together");
+    // Optional soft full-bleed hero background artwork.
     // Background image itself is set purely in CSS (with a media query that
     // swaps to the mobile crop below 768px) so it stays responsive without
     // JS; this just respects the "" opt-out and fades it in.

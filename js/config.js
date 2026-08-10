@@ -42,12 +42,9 @@ window.WEDDING_CONFIG = {
   },
 
   /* ---------- Illustrations ----------
-     All couple/hero artwork lives in assets/images/illustrations/.
-     These are placeholder SVGs — drop your own AI-generated or hand
-     -illustrated artwork in under the SAME filenames (or update the
-     paths below) and nothing else in the codebase needs to change. */
+     Optional soft full-bleed hero backdrop photo/art. Lives directly under
+     assets/images/ — set to "" to disable it. */
   illustrations: {
-    heroCouple: "assets/images/illustrations/hero-couple.svg",
     heroBackground: "assets/images/hero-bg.jpg" // optional soft full-bleed hero backdrop; set to "" to disable
   },
 
