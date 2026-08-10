@@ -437,7 +437,7 @@
     initScrollReveal();
     initCountdown();
     initVenueActions();
-    initRSVP();
+    // RSVP is intentionally disabled for this site.
     initParticles();
   });
 
