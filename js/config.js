@@ -28,7 +28,7 @@ window.WEDDING_CONFIG = {
       mother: "Bushara",
       house: "Cherengathody (H)",
       po: "Punnakkad",
-      portrait: "assets/images/bride-portrait.jpg"
+      portrait: "assets/images/bride-portrait.jpeg"
     },
     groom: {
       fullName: "Zameel Mohammed",
@@ -37,7 +37,7 @@ window.WEDDING_CONFIG = {
       mother: "Rasiya",
       house: "Poonthottathil (H)",
       po: "Valapuram (PO)",
-      portrait: "assets/images/groom-portrait.jpg"
+      portrait: "assets/images/groom-portrait.jpeg"
     }
   },
 
@@ -53,15 +53,15 @@ window.WEDDING_CONFIG = {
 
   /* ---------- Wedding Details ---------- */
   wedding: {
-    dateISO: "2026-08-23T16:00:00+05:30",
+    dateISO: "2026-08-23T10:00:00+05:30",
     dateDisplay: "23 August 2026",
     dayDisplay: "Sunday",
     hijriDate: "10 Rabi' ul-Awwal 1448 AH",
-    timeDisplay: "4:00 PM",
-    venueName: "Pulamanthol",
+    timeDisplay: "10:00 AM",
+    venueName: "Palm Convention Centre Pulamanthol",
     venueCity: "Malappuram",
     venueState: "Kerala",
-    fullAddress: "Pulamanthol, Malappuram, Kerala, India"
+    fullAddress: "Palm Convention Centre Pulamanthol, Malappuram, Kerala, India"
   },
 
   /* ---------- Venue / Map ---------- */
