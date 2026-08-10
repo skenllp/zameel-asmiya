@@ -3185,12 +3185,9 @@ html {
 /* Mobile viewport optimization */
 @media (max-width: 768px) {
   
-  /* Improve scroll indicator visibility on mobile */
+  /* Hide scroll indicator on mobile - might interfere with scrolling */
   .new-scroll-indicator {
-    bottom: 20px;
-    padding: 12px 18px;
-    border-radius: 20px;
-    font-size: 12px;
+    display: none !important;
   }
   
   .scroll-label {
