@@ -20,7 +20,7 @@
 
   /* ---- Type ---- */
   --f-heading: 'Cormorant Garamond', serif;
-  --f-names: 'Bodoni 72', 'Bodoni Moda', 'Bodoni MT', serif;
+  --f-names: 'Cormorant Garamond', serif;
   /* High-contrast Didone used only for the couple's names (& the ampersand
      that sits between them) — "Bodoni 72" first for systems that have it
      installed, falling back to the closest legal web-font match. */
@@ -437,8 +437,8 @@ textarea:focus-visible {
 }
 
 .opening__title .opening__names {
-  font-family: var(--f-names);
-  font-style: italic;
+  font-family: var(--f-bodoni);
+  font-style: normal;
   color: var(--ink-heading);
   font-size: clamp(1.35rem, 4.2vw, 2rem);
   font-weight: 500;
@@ -929,8 +929,8 @@ textarea:focus-visible {
 }
 
 .hero__names {
-  font-family: var(--f-names);
-  font-style: italic;
+  font-family: var(--f-bodoni);
+  font-style: normal;
   color: var(--ink-heading);
   font-size: clamp(2.1rem, 5.2vw, 4rem);
   line-height: 1.08;
@@ -1526,9 +1526,8 @@ textarea:focus-visible {
 
 /* ---- Name ---- */
 .couple-card__name {
-  font-family: var(--f-names);
+  font-family: var(--f-bodoni);
   font-size: clamp(1.5rem, 3vw, 2rem);
-  font-style: italic;
   font-weight: 600;
   color: var(--ink-heading);
   letter-spacing: 0.01em;
