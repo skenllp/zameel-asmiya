@@ -79,9 +79,9 @@
     // Footer
     setText("[data-bind='footer-line']", cfg.footer.line);
     setText("[data-bind='footer-couple']", cfg.footer.couplePlaceholder);
-    const brideInitial = cfg.couple.brideFirstName.charAt(0).toUpperCase();
     const groomInitial = cfg.couple.groomFirstName.charAt(0).toUpperCase();
-    setText("[data-bind='footer-monogram']", `${brideInitial} & ${groomInitial}`);
+    const brideInitial = cfg.couple.brideFirstName.charAt(0).toUpperCase();
+    setText("[data-bind='footer-monogram']", `${groomInitial} & ${brideInitial}`);
 
     // Music
     const audio = document.querySelector("#bg-music");
