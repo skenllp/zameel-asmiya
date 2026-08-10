@@ -17,14 +17,14 @@
     document.title = cfg.meta.pageTitle;
 
     // Hero
-    setText("[data-bind='hero-bride-name']", cfg.couple.brideFirstName);
-    setText("[data-bind='hero-groom-name']", cfg.couple.groomFirstName);
+    setSwashName("[data-bind='hero-bride-name']", cfg.couple.brideFirstName);
+    setSwashName("[data-bind='hero-groom-name']", cfg.couple.groomFirstName);
     setText("[data-bind='hero-date']", cfg.wedding.dateDisplay);
     setText("[data-bind='hero-venue']", `${cfg.wedding.venueName}, ${cfg.wedding.venueCity}`);
 
     // Opening overlay
-    setText("[data-bind='open-bride-name']", cfg.couple.brideFirstName);
-    setText("[data-bind='open-groom-name']", cfg.couple.groomFirstName);
+    setSwashName("[data-bind='open-bride-name']", cfg.couple.brideFirstName);
+    setSwashName("[data-bind='open-groom-name']", cfg.couple.groomFirstName);
 
     // Bismillah
     setText("[data-bind='bismillah-arabic']", cfg.invitation.bismillahArabic);
@@ -114,6 +114,30 @@
     document.querySelectorAll(sel).forEach(el => {
       el.innerHTML = arr.map(item => `<p>${item}</p>`).join("");
     });
+  }
+  // Escapes text for safe innerHTML insertion (names come from our own
+  // config, but this keeps setSwashName safe regardless).
+  function escapeHTML(str) {
+    return String(str).replace(/[&<>"']/g, ch => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+    }[ch]));
+  }
+  // Renders a name with the first letter of every word wrapped in
+  // .letter-swash, so it picks up the flowing script capital styled in
+  // css (--f-swash) while the rest of the name stays in the elegant
+  // italic serif — matching the "big decorative initial" look used on
+  // formal wedding invitations.
+  function setSwashName(sel, val) {
+    const html = String(val)
+      .split(" ")
+      .map(word => {
+        if (!word) return word;
+        const first = escapeHTML(word.charAt(0));
+        const rest = escapeHTML(word.slice(1));
+        return `<span class="letter-swash">${first}</span>${rest}`;
+      })
+      .join(" ");
+    document.querySelectorAll(sel).forEach(el => { el.innerHTML = html; });
   }
 
   /* ------------------------------------------------------------------ */
@@ -437,7 +461,7 @@
     initScrollReveal();
     initCountdown();
     initVenueActions();
-    // RSVP is intentionally disabled for this site.
+    initRSVP();
     initParticles();
   });
 
