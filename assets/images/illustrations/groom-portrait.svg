@@ -1,0 +1,39 @@
+<svg viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of the groom">
+  <defs>
+    <linearGradient id="gSkin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F3E3D0"/><stop offset="100%" stop-color="#EAD3BB"/>
+    </linearGradient>
+    <linearGradient id="gCoat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EFE7D6"/><stop offset="100%" stop-color="#DED0AE"/>
+    </linearGradient>
+    <radialGradient id="gGlow" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFDF6" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FFFDF6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="150" cy="150" r="140" fill="url(#gGlow)"/>
+  <circle cx="150" cy="150" r="128" fill="none" stroke="#C8A95A" stroke-width="1"/>
+
+  <!-- shoulders / sherwani -->
+  <path d="M38 340 C40 265 66 228 98 214 C90 240 90 260 150 264 C210 260 210 240 202 214 C234 228 260 265 262 340 Z"
+        fill="url(#gCoat)" stroke="#8A7B54" stroke-width="1.2"/>
+  <path d="M150 226 C148 260 150 300 152 336" fill="none" stroke="#C8A95A" stroke-width="1"/>
+  <circle cx="150" cy="248" r="2.2" fill="#C8A95A"/>
+  <circle cx="151" cy="280" r="2.2" fill="#C8A95A"/>
+  <circle cx="151" cy="312" r="2.2" fill="#C8A95A"/>
+  <path d="M112 216 C122 228 178 228 188 216" fill="none" stroke="#C8A95A" stroke-width="1.3"/>
+
+  <!-- neck -->
+  <path d="M134 188 C134 202 134 210 150 214 C166 210 166 202 166 188 Z" fill="url(#gSkin)"/>
+
+  <!-- head -->
+  <ellipse cx="150" cy="150" rx="38" ry="42" fill="url(#gSkin)"/>
+  <path d="M118 162 C118 188 132 206 150 208 C168 206 182 188 182 162 C182 182 168 198 150 200 C132 198 118 182 118 162Z" fill="#EAD9BE" opacity="0.55"/>
+  <path d="M132 146 q6 4 0 8" fill="none" stroke="#B08A63" stroke-width="1.1" opacity="0.7"/>
+  <path d="M168 146 q-6 4 0 8" fill="none" stroke="#B08A63" stroke-width="1.1" opacity="0.7"/>
+  <path d="M140 172 q10 6 20 0" fill="none" stroke="#B08A63" stroke-width="1.1" opacity="0.6"/>
+
+  <!-- cap -->
+  <path d="M114 132 C114 104 130 86 150 86 C171 86 186 104 186 132 C186 116 172 100 150 100 C129 100 114 116 114 132Z" fill="#F1E7D2" stroke="#C8A95A" stroke-width="1.2"/>
+  <circle cx="150" cy="94" r="2.6" fill="#C8A95A"/>
+</svg>

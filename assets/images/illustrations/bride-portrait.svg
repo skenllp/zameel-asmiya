@@ -1,0 +1,41 @@
+<svg viewBox="0 0 300 340" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of the bride">
+  <defs>
+    <linearGradient id="bSkin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F3E3D0"/><stop offset="100%" stop-color="#EAD3BB"/>
+    </linearGradient>
+    <linearGradient id="bHijab" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EFE1C3"/><stop offset="100%" stop-color="#DCC48D"/>
+    </linearGradient>
+    <linearGradient id="bDress" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FBF8F1"/><stop offset="100%" stop-color="#F0E6D2"/>
+    </linearGradient>
+    <radialGradient id="bGlow" cx="50%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFDF6" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#FFFDF6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="150" cy="150" r="140" fill="url(#bGlow)"/>
+  <circle cx="150" cy="150" r="128" fill="none" stroke="#C8A95A" stroke-width="1"/>
+
+  <!-- shoulders / dress -->
+  <path d="M40 340 C42 270 70 235 105 222 C118 235 182 235 195 222 C230 235 258 270 260 340 Z"
+        fill="url(#bDress)" stroke="#C8A95A" stroke-width="1.2"/>
+  <path d="M105 250 C130 262 170 262 195 250" fill="none" stroke="#D8BE7A" stroke-width="1" opacity="0.7"/>
+
+  <!-- neck -->
+  <path d="M132 195 C132 210 132 218 150 222 C168 218 168 210 168 195 Z" fill="url(#bSkin)"/>
+
+  <!-- hijab -->
+  <path d="M92 120 C92 82 118 55 150 55 C183 55 208 82 208 122 C208 150 195 168 184 178 C204 195 214 218 216 240 C222 210 216 182 200 165 C210 152 212 136 205 122 C190 88 112 88 96 122 C90 136 92 150 100 162 C82 178 70 205 74 240 C76 210 88 190 108 178 C97 168 90 150 92 120 Z"
+        fill="url(#bHijab)" stroke="#C8A95A" stroke-width="1.1"/>
+  <path d="M115 112 C115 90 130 74 150 74 C171 74 186 90 186 113 C186 138 171 158 150 161 C130 158 115 138 115 112 Z" fill="url(#bSkin)"/>
+  <path d="M132 118 q6 4 0 8" fill="none" stroke="#B08A63" stroke-width="1.1" opacity="0.7"/>
+  <path d="M168 118 q-6 4 0 8" fill="none" stroke="#B08A63" stroke-width="1.1" opacity="0.7"/>
+  <path d="M142 141 q8 6 16 0" fill="none" stroke="#B08A63" stroke-width="1.1" opacity="0.6"/>
+  <path d="M120 92 C132 82 168 82 180 92" fill="none" stroke="#C8A95A" stroke-width="1.6"/>
+  <circle cx="150" cy="86" r="3" fill="#C8A95A"/>
+
+  <!-- gold earring accent -->
+  <circle cx="118" cy="150" r="2.4" fill="#C8A95A"/>
+  <circle cx="182" cy="150" r="2.4" fill="#C8A95A"/>
+</svg>

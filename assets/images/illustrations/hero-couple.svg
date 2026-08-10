@@ -1,0 +1,113 @@
+<svg viewBox="0 0 900 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of the bride and groom">
+  <defs>
+    <linearGradient id="skinGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F3E3D0"/>
+      <stop offset="100%" stop-color="#EAD3BB"/>
+    </linearGradient>
+    <linearGradient id="brideDress" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FBF8F1"/>
+      <stop offset="100%" stop-color="#F0E6D2"/>
+    </linearGradient>
+    <linearGradient id="hijabGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#EFE1C3"/>
+      <stop offset="100%" stop-color="#DCC48D"/>
+    </linearGradient>
+    <linearGradient id="groomCoat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EFE7D6"/>
+      <stop offset="100%" stop-color="#DED0AE"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#FFFDF6" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFFDF6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <ellipse cx="450" cy="330" rx="340" ry="300" fill="url(#glow)"/>
+
+  <!-- ===================== BRIDE (left) ===================== -->
+  <g id="bride">
+    <!-- gown -->
+    <path d="M300 640 C280 480 285 400 330 340 C345 320 335 300 355 285 C375 270 405 270 420 285 C438 300 430 322 448 342 C486 400 492 480 470 640 Z"
+          fill="url(#brideDress)" stroke="#C8A95A" stroke-width="1.4"/>
+    <!-- gown centre seam + gold embroidery lines -->
+    <path d="M385 300 C382 400 384 520 386 620" fill="none" stroke="#D8BE7A" stroke-width="1" opacity="0.8"/>
+    <path d="M330 420 C365 430 405 430 445 420" fill="none" stroke="#D8BE7A" stroke-width="1" opacity="0.6"/>
+    <path d="M315 500 C365 512 410 512 458 500" fill="none" stroke="#D8BE7A" stroke-width="1" opacity="0.6"/>
+    <path d="M305 580 C365 594 415 594 465 580" fill="none" stroke="#D8BE7A" stroke-width="1" opacity="0.6"/>
+    <!-- gold floral sprigs on gown -->
+    <g stroke="#C8A95A" stroke-width="1" fill="none" opacity="0.8">
+      <path d="M350 360 q10 -14 22 0 q-12 10 -22 0z"/>
+      <circle cx="360" cy="358" r="2" fill="#C8A95A" stroke="none"/>
+      <path d="M420 440 q10 -12 20 0 q-10 10 -20 0z"/>
+      <circle cx="429" cy="438" r="2" fill="#C8A95A" stroke="none"/>
+      <path d="M340 520 q10 -12 20 0 q-10 10 -20 0z"/>
+    </g>
+
+    <!-- neck -->
+    <path d="M368 265 C368 280 368 288 385 292 C402 288 402 280 402 265 Z" fill="url(#skinGrad)"/>
+
+    <!-- hijab drape -->
+    <path d="M330 210 C330 170 355 140 385 140 C418 140 442 170 442 212 C442 240 430 258 420 268 C440 300 448 330 452 360 C460 330 458 300 448 275 C470 285 486 320 486 360 C486 300 460 250 430 232 C440 220 442 205 436 190 C420 155 352 155 336 190 C328 208 332 224 342 236 C312 252 292 296 296 355 C300 300 316 262 340 246 C328 234 322 220 330 210 Z"
+          fill="url(#hijabGrad)" stroke="#C8A95A" stroke-width="1.2"/>
+    <!-- hijab inner face opening -->
+    <path d="M352 200 C352 178 366 162 386 162 C407 162 421 178 421 201 C421 226 407 246 386 249 C366 246 352 226 352 200 Z"
+          fill="url(#skinGrad)"/>
+    <!-- soft facial features (minimal, modest) -->
+    <path d="M368 205 q6 4 0 8" fill="none" stroke="#B08A63" stroke-width="1.1" opacity="0.7"/>
+    <path d="M404 205 q-6 4 0 8" fill="none" stroke="#B08A63" stroke-width="1.1" opacity="0.7"/>
+    <path d="M378 228 q8 6 16 0" fill="none" stroke="#B08A63" stroke-width="1.1" opacity="0.6"/>
+    <!-- gold headpiece accent -->
+    <path d="M356 178 C368 168 404 168 416 178" fill="none" stroke="#C8A95A" stroke-width="1.6"/>
+    <circle cx="386" cy="172" r="3" fill="#C8A95A"/>
+
+    <!-- bouquet suggestion -->
+    <g transform="translate(378,455)">
+      <path d="M0 40 C-4 20 -2 4 0 -6 C2 4 4 20 0 40Z" fill="#EDE3CE" stroke="#C8A95A" stroke-width="0.8"/>
+      <circle cx="-10" cy="0" r="7" fill="#F1E7D2" stroke="#C8A95A" stroke-width="0.8"/>
+      <circle cx="9" cy="-4" r="6" fill="#EAD9B0" stroke="#C8A95A" stroke-width="0.8"/>
+      <circle cx="0" cy="-10" r="6.5" fill="#F4EEDD" stroke="#C8A95A" stroke-width="0.8"/>
+      <path d="M-14 6 q-10 4 -14 16" stroke="#9CA37E" stroke-width="1" fill="none"/>
+      <path d="M14 4 q10 6 12 18" stroke="#9CA37E" stroke-width="1" fill="none"/>
+    </g>
+  </g>
+
+  <!-- ===================== GROOM (right) ===================== -->
+  <g id="groom">
+    <!-- sherwani body -->
+    <path d="M470 640 C458 500 462 420 486 368 C476 340 486 316 505 302 C524 288 552 288 570 303 C588 317 596 340 586 368 C610 420 614 500 602 640 Z"
+          fill="url(#groomCoat)" stroke="#8A7B54" stroke-width="1.3"/>
+    <!-- centre placket buttons -->
+    <path d="M536 315 C534 420 536 540 538 630" fill="none" stroke="#C8A95A" stroke-width="1"/>
+    <circle cx="536" cy="345" r="2.4" fill="#C8A95A"/>
+    <circle cx="536" cy="385" r="2.4" fill="#C8A95A"/>
+    <circle cx="537" cy="425" r="2.4" fill="#C8A95A"/>
+    <circle cx="537" cy="465" r="2.4" fill="#C8A95A"/>
+    <circle cx="537" cy="505" r="2.4" fill="#C8A95A"/>
+    <!-- collar -->
+    <path d="M508 305 C516 318 556 318 564 305" fill="none" stroke="#C8A95A" stroke-width="1.4"/>
+    <!-- gold thread embroidery hem -->
+    <path d="M478 400 C510 412 562 412 594 400" fill="none" stroke="#D8BE7A" stroke-width="1" opacity="0.7"/>
+    <path d="M470 470 C512 484 560 484 602 470" fill="none" stroke="#D8BE7A" stroke-width="1" opacity="0.6"/>
+
+    <!-- neck -->
+    <path d="M520 278 C520 292 520 300 536 304 C552 300 552 292 552 278 Z" fill="url(#skinGrad)"/>
+
+    <!-- head -->
+    <ellipse cx="536" cy="240" rx="34" ry="38" fill="url(#skinGrad)"/>
+    <!-- short beard suggestion -->
+    <path d="M508 250 C508 275 520 292 536 294 C552 292 564 275 564 250 C564 268 552 282 536 284 C520 282 508 268 508 250Z" fill="#EAD9BE" opacity="0.55"/>
+    <!-- soft facial features -->
+    <path d="M520 234 q6 4 0 8" fill="none" stroke="#B08A63" stroke-width="1.1" opacity="0.7"/>
+    <path d="M552 234 q-6 4 0 8" fill="none" stroke="#B08A63" stroke-width="1.1" opacity="0.7"/>
+    <path d="M528 258 q8 5 16 0" fill="none" stroke="#B08A63" stroke-width="1.1" opacity="0.6"/>
+    <!-- turban / cap accent -->
+    <path d="M504 224 C504 198 518 182 536 182 C555 182 568 198 568 224 C568 210 556 196 536 196 C517 196 504 210 504 224Z" fill="#F1E7D2" stroke="#C8A95A" stroke-width="1.2"/>
+    <circle cx="536" cy="188" r="2.6" fill="#C8A95A"/>
+  </g>
+
+  <!-- clasped hands suggestion between them -->
+  <path d="M452 470 C462 460 476 460 486 470 C476 478 462 478 452 470Z" fill="url(#skinGrad)" stroke="#C8A95A" stroke-width="0.8"/>
+
+  <!-- ground shadow -->
+  <ellipse cx="450" cy="628" rx="230" ry="10" fill="#C8A95A" opacity="0.12"/>
+</svg>
