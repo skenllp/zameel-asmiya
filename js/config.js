@@ -12,7 +12,7 @@ window.WEDDING_CONFIG = {
   /* ---------- Meta / SEO ---------- */
   meta: {
     pageTitle: "Zameel Mohammed & Asmiya Sherin | Wedding Invitation",
-    description: "Wedding Invitation of Zameel Mohammed & Asmiya Sherin — 23 August 2026, Palm Convention Centre Pulamanthole.",
+    description: "Wedding Invitation of Zameel Mohammed & Asmiya Sherin — 23 August 2026, Palm Convention Center Pulamanthole.",
     ogImage: "assets/images/og-image.jpg",
     siteUrl: "" // fill with the live URL once deployed
   },
@@ -53,10 +53,10 @@ window.WEDDING_CONFIG = {
     dayDisplay: "Sunday",
     hijriDate: "10 Rabi' ul-Awwal 1448 AH",
     timeDisplay: "10:00 AM",
-    venueName: "Palm Convention Centre Pulamanthole",
+    venueName: "Palm Convention Center Pulamanthole",
     venueCity: "Malappuram",
     venueState: "Kerala",
-    fullAddress: "Palm Convention Centre Pulamanthole, Malappuram, Kerala, India"
+    fullAddress: "Palm Convention Center Pulamanthole, Malappuram, Kerala, India"
   },
 
   /* ---------- Venue / Map ---------- */
