@@ -11,18 +11,18 @@ window.WEDDING_CONFIG = {
 
   /* ---------- Meta / SEO ---------- */
   meta: {
-    pageTitle: "Zameel Mohammed & Asmiya Sherin C.T | Wedding Invitation",
-    description: "Wedding Invitation of Zameel Mohammed & Asmiya Sherin C.T — 23 August 2026, Palm Convention Centre Pulamanthole.",
+    pageTitle: "Zameel Mohammed & Asmiya Sherin | Wedding Invitation",
+    description: "Wedding Invitation of Zameel Mohammed & Asmiya Sherin — 23 August 2026, Palm Convention Centre Pulamanthole.",
     ogImage: "assets/images/og-image.jpg",
     siteUrl: "" // fill with the live URL once deployed
   },
 
   /* ---------- Couple ---------- */
   couple: {
-    brideFirstName: "Asmiya Sherin C.T",
+    brideFirstName: "Asmiya Sherin",
     groomFirstName: "Zameel Mohammed",
     bride: {
-      fullName: "Asmiya Sherin C.T",
+      fullName: "Asmiya Sherin",
       family: "Cherengathody",
       father: "Azeez Cherengathody",
       mother: "Bushara",
@@ -89,7 +89,7 @@ window.WEDDING_CONFIG = {
   /* ---------- Footer ---------- */
   footer: {
     line: "Made with ❤ for the celebration of love.",
-    couplePlaceholder: "Zameel Mohammed & Asmiya Sherin C.T · 23.08.2026"
+    couplePlaceholder: "Zameel Mohammed & Asmiya Sherin · 23.08.2026"
   },
 
   /* ---------- Music ---------- */
